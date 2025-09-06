@@ -1,12 +1,63 @@
-# React + Vite
+# 🎥 YouTube Clone (React + Vite + YouTube Data API v3)
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+A responsive **YouTube Clone** built with **React (via Vite)**.  
+Features include home feed, video playback, recommendations, sidebar categories, and more. Data is fetched live from the **YouTube Data API v3**.
 
-Currently, two official plugins are available:
+## ✨ Features
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+- 🔍 Search videos  
+- 🏠 Browse recommended/trending feed  
+- 📺 Watch video with player & details  
+- 📑 Sidebar navigation with categories  
+- 📱 Responsive layout for all devices  
+- ⚠️ Error handling for failed API calls  
+- 🎨 Clean UI with modular components  
 
-## Expanding the ESLint configuration
+---
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+## 🛠️ Tech Stack
+
+- **Frontend:** React 18, Vite  
+- **Routing:** React Router DOM  
+- **API:** YouTube Data API v3  
+- **HTTP Client:** Fetch   
+- **Styling:** CSS Modules (separate `.css` files per component)  
+
+---
+
+## 📂 Project Structure
+
+```bash
+src/
+├── assets/                 # Images, icons, static assets
+│
+├── Components/             # Reusable UI building blocks
+│   ├── Feed/
+│   │   ├── Feed.jsx
+│   │   └── Feed.css
+│   ├── Navbar/
+│   │   ├── Navbar.jsx
+│   │   └── Navbar.css
+│   ├── PlayVideo/
+│   │   ├── PlayVideo.jsx
+│   │   └── PlayVideo.css
+│   ├── Recommended/
+│   │   ├── Recommended.jsx
+│   │   └── Recommended.css
+│   └── Sidebar/
+│       ├── Sidebar.jsx
+│       └── Sidebar.css
+│
+├── Pages/                  # Page-level components (routes)
+│   ├── Home/
+│   │   ├── Home.jsx
+│   │   └── Home.css
+│   └── Video/
+│       ├── Video.jsx
+│       └── Video.css
+│
+├── App.jsx                 # Root component
+├── data.js                 # Static data/constants (categories, dummy data)
+├── index.css               # Global styles
+├── main.jsx                # React entry (Vite)
+
